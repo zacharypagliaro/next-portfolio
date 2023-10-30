@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+
+.left-50 {
+    left: 50%;
+}
+
+.right-50 {
+    right: 50%;
+}
+
+.top-50 {
+    top: 50%;
+}
+
+.-z-2 {
+    z-index: -2;
+}
+
+.-z-1 {
+    z-index: -1;
+}
+
+.-z-0 {
+    z-index: 0;
+}
+
+.-z1 {
+    z-index: 1;
+}
+
+
+.secondary-title {
+    @apply text-3xl font-bold;
+}
+
+.secondary-title::before {
+    content: "";
+    @apply block w-12 h-2 bg-theme rounded-full mb-1;
+}
+
+.section-paragraph {
+    @apply text-secondary my-6 w-full max-w-3xl;
+}
+
+.badge {
+    @apply px-4 py-2 text-sm rounded bg-badge;
+}
+
+[id] {
+    scroll-margin-top: 100px;
+}
+
+.left-percentage {
+    left: 5%;
+}
+
+.h-screen-partial {
+    height: 80vh;
+}
+
+.nav-dot {
+    transition: background 200ms, border-color 200ms;
+}
+
+.selected-circle {
+    @apply border-theme bg-theme;
+}
+
+.nav-dot:hover span {
+    opacity: 1;
+}
+
+.player-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+
+    max-width: 500px;
+    padding: 10px;
+
+    /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.soundcloud-player-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+    /* 720 / 1280 = 0.5625 */
+}
+
+.soundcloud-react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
